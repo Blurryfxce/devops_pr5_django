@@ -2,6 +2,7 @@
 {% block title %}{{ post.title }}{% endblock %}
 {% block head %}{{ post.title }}{% endblock %}
 {% block content %}
+	<p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
 	<p class="date">
 		Published {{ post.publish }} by {{ post.author }}
 	</p>
