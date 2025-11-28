@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib.sitemaps import Sitemap
 from django.contrib.sitemaps.views import sitemap
-from sitemaps import PostSitemap
+from .sitemaps import PostSitemap
 
 
 app_name = 'blog'
